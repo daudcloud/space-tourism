@@ -1,8 +1,9 @@
 import Header from "../Header";
 import Image from "next/image";
+import Link from "next/Link";
 import { useState } from "react";
 
-export default function Layout({ title, children }) {
+export default function Layout({ page, title, children }) {
   const [showNav, setShowNav] = useState(false);
   const close = () => {
     setShowNav((prevShowNav) => false);
@@ -38,18 +39,46 @@ export default function Layout({ title, children }) {
                 objectFit="contain"
               />
             </div>
-            <li className="mb-7">
-              <strong>00</strong> home
-            </li>
-            <li className="mb-7">
-              <strong>01</strong> destination
-            </li>
-            <li className="mb-7">
-              <strong>02</strong> crew
-            </li>
-            <li className="mb-7">
-              <strong>03</strong> technology
-            </li>
+            <Link href="/">
+              <li
+                className={`mb-5 py-2 ${
+                  page === "home" ? "border-r-4 border-white" : "border-none"
+                }`}
+              >
+                <strong>00</strong> home
+              </li>
+            </Link>
+            <Link href="/destination">
+              <li
+                className={`mb-5 py-2 ${
+                  page === "destination"
+                    ? "border-r-4 border-white"
+                    : "border-none"
+                }`}
+              >
+                <strong>01</strong> destination
+              </li>
+            </Link>
+            <Link href="/crew">
+              <li
+                className={`mb-5 py-2 ${
+                  page === "crew" ? "border-r-4 border-white" : "border-none"
+                }`}
+              >
+                <strong>02</strong> crew
+              </li>
+            </Link>
+            <Link href="/technology">
+              <li
+                className={`mb-5 py-2 ${
+                  page === "technology"
+                    ? "border-r-4 border-white"
+                    : "border-none"
+                }`}
+              >
+                <strong>03</strong> technology
+              </li>
+            </Link>
           </nav>
           <div
             className={`${
