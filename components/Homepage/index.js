@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Homepage({ title }) {
   return (
     <>
@@ -12,11 +14,13 @@ export default function Homepage({ title }) {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-        <div className="font-bellefair mt-32 text-black bg-white flex  p-20  rounded-full self-center relative">
-          <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl tracking-wide">
-            EXPLORE
-          </span>
-        </div>
+        <Link href="/destination">
+          <a className="font-bellefair mt-32 text-black bg-white flex  p-20  rounded-full self-center relative">
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl tracking-wide">
+              EXPLORE
+            </span>
+          </a>
+        </Link>
       </div>
     </>
   );
