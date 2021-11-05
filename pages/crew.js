@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 export default function Crew() {
   return (
     <>
-      <Header title="Frontend Mentor | Crew" />
-      <Layout>
+      <Layout title="Frontend Mentor | Crew">
         <h1>Crew</h1>
       </Layout>
     </>

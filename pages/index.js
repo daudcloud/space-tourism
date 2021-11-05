@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <>
-      <Header title="Frontend Mentor | Space tourism website" />
-      <Layout>
+      <Layout title="Frontend Mentor | Space tourism website">
         <h1>Home</h1>
       </Layout>
     </>

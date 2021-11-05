@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 export default function Destination() {
   return (
     <>
-      <Header title="Frontend Mentor | Destination" />
-      <Layout>
+      <Layout title="Frontend Mentor | Destination">
         <h1>Destination</h1>
       </Layout>
     </>

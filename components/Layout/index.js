@@ -1,9 +1,10 @@
-import Head from "next/head";
-export default function Layout({ children }) {
+import "./styles.css";
+export default function Layout({ title, children }) {
   return (
-    <>
-      <header>header</header>
+    <div>
+      <Header title={title} />
+      <header></header>
       <main>{children}</main>
-    </>
+    </div>
   );
 }
