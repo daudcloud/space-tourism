@@ -1,6 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  color: white;
+}
+
+nav li {
+  letter-spacing: 4px;
+}
+
+.font-barlow {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.font-bellefair {
+  font-family: "Bellefair";
+}
 
 .bg-main {
   background-image: url("../public/assets/home/background-home-mobile.jpg");
