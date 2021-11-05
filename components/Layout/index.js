@@ -1,4 +1,5 @@
-import "./styles.css";
+import Header from "../Header";
+
 export default function Layout({ title, children }) {
   return (
     <div>
