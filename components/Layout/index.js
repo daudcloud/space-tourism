@@ -29,15 +29,14 @@ export default function Layout({ page, title, children }) {
               showNav ? "right-0" : "-right-64"
             }`}
           >
-            <div
-              className="absolute w-6 h-6 top-0 right-0 mr-6 mt-6 "
-              onClick={close}
-            >
-              <Image
-                src="/assets/shared/icon-close.svg"
-                layout="fill"
-                objectFit="contain"
-              />
+            <div className="absolute top-0 right-0 mr-6 mt-6 ">
+              <div className="relative w-6 h-6" onClick={close}>
+                <Image
+                  src="/assets/shared/icon-close.svg"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </div>
             <Link href="/">
               <li
