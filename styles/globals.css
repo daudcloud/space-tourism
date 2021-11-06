@@ -13,7 +13,7 @@ nav li {
 }
 
 .border-nav {
-  @apply relative before:absolute before:bottom-0 before:left-0 before:right-0 before:h-1 before:bg-white before:z-10 before:content-[''] hover:before:bg-[#b3b3b3] hover:before:block;
+  @apply relative before:absolute before:bottom-0 before:left-0 before:right-0 before:h-1 sm:before:bg-white before:z-10 before:content-[''] sm:hover:before:bg-[#b3b3b3] hover:before:block before:hidden;
 }
 
 .active {

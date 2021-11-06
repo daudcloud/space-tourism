@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Layout({ page, title, children }) {
