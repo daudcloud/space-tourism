@@ -17,7 +17,7 @@ export default function Layout({ page, title, children }) {
       <div className="bg-main min-h-screen relative overflow-hidden">
         <Header title={title} />
         <header className="p-6 flex">
-          <div className="relative w-10 h-10">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12">
             <Image
               src="/assets/shared/logo.svg"
               layout="fill"
