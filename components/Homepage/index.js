@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Homepage({ title }) {
+export default function Homepage() {
   return (
     <>
       <div className="text-center mt-4 px-6 flex flex-col sm:mt-20 xl:mt-28 xl:flex-row xl:px-52 xl:text-left xl:items-end xl:gap-96">
