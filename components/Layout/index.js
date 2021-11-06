@@ -16,7 +16,7 @@ export default function Layout({ page, title, children }) {
     <>
       <div className="bg-main min-h-screen relative overflow-hidden">
         <Header title={title} />
-        <header className="p-6 flex">
+        <header className="p-6 xl:pt-16 xl:pl-14 flex">
           <div className="relative w-10 h-10 sm:w-12 sm:h-12">
             <Image
               src="/assets/shared/logo.svg"
@@ -27,7 +27,7 @@ export default function Layout({ page, title, children }) {
           <nav
             className={`font-barlow uppercase list-none tracking-wider text-sm text-white absolute top-0 bottom-0 w-64 shadow z-10 pt-24 pl-8 transition-all ease-linear duration-100 ${
               showNav ? "right-0" : "-right-64"
-            } sm:flex sm:static sm:ml-auto sm:-mt-6 sm:px-10 sm:w-auto sm:-mr-6 sm:gap-8 sm:items-center sm:pt-0`}
+            } sm:flex sm:static sm:ml-auto sm:-mt-6 sm:px-10 sm:w-auto sm:-mr-6 sm:gap-8 sm:items-center sm:pt-0 xl:gap-16 xl:px-32 before:content-[''] before:bg-gray-600 before:h-px before:absolute before:top-1/2 before:w-7/12 before:-left-2/4 xl:before:block before:hidden`}
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.04)",
               backdropFilter: "blur(82px)",
@@ -48,7 +48,7 @@ export default function Layout({ page, title, children }) {
                   page === "home" ? "active" : "non-active"
                 } sm:mb-0`}
               >
-                <strong className="sm:hidden">00</strong> home
+                <strong className="sm:hidden xl:inline-block">00</strong> home
               </li>
             </Link>
             <Link href="/destination">
@@ -57,7 +57,8 @@ export default function Layout({ page, title, children }) {
                   page === "destination" ? "active" : "non-active"
                 } sm:mb-0`}
               >
-                <strong className="sm:hidden">01</strong> destination
+                <strong className="sm:hidden xl:inline-block">01</strong>{" "}
+                destination
               </li>
             </Link>
             <Link href="/crew">
@@ -66,7 +67,7 @@ export default function Layout({ page, title, children }) {
                   page === "crew" ? "active" : "non-active"
                 } sm:mb-0`}
               >
-                <strong className="sm:hidden">02</strong> crew
+                <strong className="sm:hidden xl:inline-block">02</strong> crew
               </li>
             </Link>
             <Link href="/technology">
@@ -75,7 +76,8 @@ export default function Layout({ page, title, children }) {
                   page === "technology" ? "active" : "non-active"
                 }`}
               >
-                <strong className="sm:hidden">03</strong> technology
+                <strong className="sm:hidden xl:inline-block">03</strong>{" "}
+                technology
               </li>
             </Link>
           </nav>

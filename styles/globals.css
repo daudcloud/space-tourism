@@ -44,7 +44,7 @@ nav li {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .bg-main {
     background-image: url("../public/assets/home/background-home-desktop.jpg");
   }
